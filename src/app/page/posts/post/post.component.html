@@ -1,0 +1,6 @@
+@if (!loading && post) {
+<h2>{{ post.id }}: {{ post.title }}</h2>
+<p>{{ post.body }}</p>
+} @else {
+<div>読込中……</div>
+}

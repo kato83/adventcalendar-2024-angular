@@ -1,0 +1,17 @@
+@if (!loading) {
+<ul>
+  @for (post of posts; track $index) {
+  <li>
+    <a routerLink="/posts/{{ post.id }}">
+      {{ post.id }}: {{ post.title }}
+    </a>
+  </li>
+  } @empty {
+  <li>データがありません</li>
+  }
+</ul>
+} @else {
+<ul>
+  <li>読込中……</li>
+</ul>
+}
