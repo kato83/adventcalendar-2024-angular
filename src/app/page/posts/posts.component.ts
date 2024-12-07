@@ -18,10 +18,10 @@ export class PostsComponent {
   constructor() {
     this.postsService.getAll().subscribe({
       next: (posts) => {
-        this.posts = posts
+        this.posts = posts;
       },
       error: (err) => {
-        console.error(err)
+        console.error(err);
       },
       complete: () => {
         this.loading = false;
