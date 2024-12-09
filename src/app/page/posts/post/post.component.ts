@@ -1,4 +1,4 @@
-import { Component, inject, Input, input, OnInit } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { PostsService } from '../../../service/posts.service';
 import { Post } from '../../../model/post.model';
 
